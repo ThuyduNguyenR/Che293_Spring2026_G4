@@ -11,6 +11,8 @@ else:
     gmx_path = shutil.which('gmx')
 
 main_dir = os.getcwd()
+pdb = os.getenv('pdbID')
+forcef = os.getenv('ff')
 
 class Protein:
     def __init__(self, pdbID, forcefield):
@@ -77,3 +79,6 @@ class Protein:
 # prot.process()
 # prot.writeAllHTML()
 # prot.viewHTML('4ZZI/4ZZI_0.html')
+
+# if __name__ == "__main__":
+#     protein = Protein()
